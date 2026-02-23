@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* font-family: "Urbanist", sans-serif; */
+:root {
+  --color-body: #1e1e1e;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-dark-red: #8a0707;
+  --card-bg: linear-gradient(to right, #ffffff, #999999);
+  --color-p-light: rgb(255, 255, 255, 50%);
+  --color-light-white: rgb(255, 255, 255, 70%);
+  --gradient-card: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.06),
+    rgba(255, 255, 255, 0.01)
+  );
+  --number-color: linear-gradient(135deg, #a7a7a7, #8a0707);
+  --photography-overlay-color: linear-gradient(
+    to top,
+    rgba(138, 7, 7, 0.85),
+    rgba(0, 0, 0, 0.95)
+  );
+}
+.pro-team-sec {
+  padding: 100px 0;
+}
+.pro-team-hdr {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.team-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.team-card img {
+  width: 100%;
+  display: block;
+  transition: 0.4s ease;
+}
+
+
+.team-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* background: linear-gradient(to bottom, #000000 0%, #8a0707 100%); */
+  opacity: 0;
+  transition: 0.4s ease;
+}
+
+
+.team-info {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+
+  z-index: 2;
+  transition: all 0.4s ease;
+}
+
+.team-info .person {
+  font-size: 24px;
+  font-weight: 600;
+
+  color: var(--color-white);
+  font-family: "Urbanist", sans-serif;
+  text-transform: capitalize;
+}
+
+.team-info .line {
+  width: 431px;
+  height: 1px;
+  background: var(--color-white);
+  margin: 15px auto;
+}
+
+.team-info .role {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--color-white);
+  font-family: "Urbanist", sans-serif;
+  text-transform: capitalize;
+}
+
+
+.team-social {
+  position: absolute;
+  bottom: 50px; 
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+  z-index: 2;
+}
+
+.team-social a {
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--color-white);
+  background: var(--color-black);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+  margin-right: 20px;
+}
+
+.team-social a:hover {
+  background: var(--color-dark-red);
+}
+
+.team-social a:hover svg path {
+  stroke: var(--color-black);
+}
+
+.team-card:hover::after {
+  opacity: 1;
+}
+
+.team-card:hover .team-info {
+  opacity: 0;
+  transform: translateY(-20px); 
+}
+
+.team-card:hover .team-social {
+  opacity: 1;
+  transform: translateY(0); 
+}

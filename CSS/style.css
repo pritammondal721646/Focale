@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* font-family: "Urbanist", sans-serif; */
+:root {
+  --color-body: #1e1e1e;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-dark-red: #8a0707;
+  --card-bg: linear-gradient(to right, #ffffff, #999999);
+  --color-p-light: rgb(255, 255, 255, 50%);
+  --color-light-white: rgb(255, 255, 255, 70%);
+  --gradient-card: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.06),
+    rgba(255, 255, 255, 0.01)
+  );
+  --number-color: linear-gradient(135deg, #a7a7a7, #8a0707);
+  --border-color: rgba(255, 255, 255, 0.15);
+  --color-shadow: #rgba(255, 255, 255, 0.08);
+}
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Syne", sans-serif !important;
+  background: var(--color-body) !important;
+}
+a {
+  display: inline-block;
+  text-decoration: none !important;
+}
+ul {
+  list-style-type: none;
+}
+.container {
+  max-width: 1674px !important;
+}
+.title-1 {
+  font-size: 4.167vw;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.title-2 {
+  font-size: 2.083vw;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+.title-3 {
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.title-4 {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--color-white);
+  font-family: "Urbanist", sans-serif;
+  text-transform: capitalize;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(255, 255, 255, 80%);
+  text-transform: uppercase;
+}
+.primary-btn {
+  position: relative;
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--color-white);
+  z-index: 1;
+  margin-left: 30px;
+  transition: padding 0.3s ease;
+}
+.primary-btn::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: var(--color-dark-red);
+  border-radius: 50%;
+  top: -36px;
+  left: -75px;
+  transform: translate(50%);
+  z-index: -1;
+  transition: 0.5s ease;
+  pointer-events: none;
+}
+.primary-btn:hover::before {
+  left: 70%;
+  transform: translate(0);
+}
+.primary-btn:hover {
+  padding-left: 18px;
+  padding-right: 38px;
+}
+/* ============== */
+/* navabar css */
+/* ================== */
+header {
+  background: var(--color-black);
+  padding: 15px 0;
+}
+.nav-item {
+  margin-left: 30px;
+}
+.nav-link {
+  padding: 0 !important;
+  text-transform: uppercase;
+  color: var(--color-white) !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  position: relative;
+}
+.nav-link::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: var(--color-white);
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  display: none;
+}
+.nav-link:hover::after {
+  display: block !important;
+}
+.nav-logo {
+  max-width: 382.5px;
+}
+.nav-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+/* ========== */
+/* Footer css */
+/* ================ */
+.footer {
+  background-color: var(--color-black);
+  padding: 100px 0;
+}
+
+.footer-logo {
+  max-width: 382.5px;
+}
+.footer-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--color-white);
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.footer-column ul,
+.footer-social ul {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: var(--color-white);
+  font-family: "Urbanist", sans-serif;
+}
+
+.footer-column ul li a {
+  color: var(--color-white);
+  transition: 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: var(--color-dark-red);
+}
+
+.footer-social ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-social ul li a {
+  margin-right: 25px;
+  background: var(--color-black);
+  padding: 15px;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.footer-social ul li a:hover {
+  background: var(--color-dark-red);
+}
+
+.footer-bottom-line {
+  margin-top: 40px;
+  height: 1px;
+  background: linear-gradient(to right, #222, #444, #222);
+}
+
+

@@ -1,0 +1,33 @@
+.banner-sec {
+  min-height: 100vh;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(138, 7, 7, 0.3) 0%,
+      /* top color */ rgba(138, 7, 7, 0.2) 15%,
+      rgba(138, 7, 7, 0.1) 30%,
+      rgba(138, 7, 7, 0) 45% /* fade out */
+    ),
+    url("/Assets/banner.png") no-repeat center/cover;
+  display: flex;
+  justify-content: center;
+
+  text-align: center;
+  overflow: hidden;
+}
+.banner-content .title-1 {
+  color: var(--color-white);
+  margin-top: 40px;
+}
+.banner-content .title-1 span {
+  color: var(--color-dark-red);
+}
+.banner-content > p {
+  font-size: 24px;
+  font-weight: 500;
+  color: rgb(255, 255, 255, 70%);
+  text-transform: capitalize;
+  font-family: "Urbanist", sans-serif;
+  margin-top: 10px;
+}

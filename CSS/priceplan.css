@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* font-family: "Urbanist", sans-serif; */
+:root {
+  --color-body: #1e1e1e;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-dark-red: #8a0707;
+  --card-bg: linear-gradient(to right, #ffffff, #999999);
+  --color-p-light: rgb(255, 255, 255, 50%);
+  --color-light-white: rgb(255, 255, 255, 70%);
+  --color-box-shadow:
+    inset 0 0 40px rgba(255, 255, 255, 0.08), 0 0 40px rgba(0, 0, 0, 0.8);
+  --color-grdient-card: linear-gradient(135deg, #3a3a3a, #0c0c0c);
+  --number-color: linear-gradient(135deg, #a7a7a7, #8a0707);
+  --colo-watermark: linear-gradient(135deg, #2b2b2b 0%, #8a0707 100%);
+}
+.price-plan-sec {
+  padding: 100px 0;
+}
+.price-plan-hdr {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.price-plan-hdr .title-2 {
+  margin-top: 15px;
+}
+.addon-card {
+  max-width: 526.67px;
+  padding: 70px 45px;
+  position: relative;
+  border-radius: 20px;
+  overflow: visible;
+  background: var(--color-grdient-card);
+  box-shadow: var(--color-box-shadow);
+  transition: all 0.5s ease;
+}
+.small-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-light-white);
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.addon-card .title-3 {
+  color: var(--color-white);
+  margin-bottom: 15px;
+}
+.addon-card::before {
+  content: "";
+  position: absolute;
+  right: -70px;
+  top: -70px;
+  width: 180px;
+  height: 180px;
+
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(0.2);
+  transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.price-circle {
+  position: absolute;
+  right: -20px;
+  top: -20px;
+  width: 100px;
+  height: 100px;
+  background: var(--color-light-white);
+  color: var(--color-dark-red);
+  font-weight: 700;
+  font-size: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  opacity: 0;
+  transform: translate(40px, -40px) scale(0.3);
+  transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.addon-card:hover::before {
+  opacity: 1;
+  transform: scale(1);
+}
+.addon-card:hover .price-circle {
+  opacity: 1;
+  transform: translate(0, 0) scale(1);
+}
+.addon-card:hover {
+  box-shadow:
+    inset 0 0 60px rgba(255, 255, 255, 0.12),
+    0 0 50px rgba(255, 0, 0, 0.25);
+}
+.feature-list {
+  list-style: disc;
+}
+.feature-list li {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Urbanist", sans-serif;
+  color: var(--color-white);
+}
+.card-btn .primary-btn {
+  margin-top: 30px;
+}
+.watermark {
+  font-size: 50px;
+  font-weight: 800;
+  position: absolute;
+  bottom: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  background: var(--colo-watermark);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+@media screen and (max-width: 768px) {
+  .addon-card {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .watermark{
+    font-size: 30px;
+    font-weight: 500;
+    bottom: 0;
+  }
+}
+@media screen and (max-width:576px){
+  
+  
+}

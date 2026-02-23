@@ -1,0 +1,34 @@
+:root {
+  --color-body: #1e1e1e;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-dark-red: #8a0707;
+  --card-bg: linear-gradient(to right, #ffffff, #999999);
+  --color-p-light: rgb(255, 255, 255, 50%);
+  --color-light-white: rgb(255, 255, 255, 70%);
+}
+.work-with-sec {
+  padding: 100px 0;
+  background: url(/Assets/workwith.png);
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.work-with-hdr {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* true center */
+  text-align: center;
+}
+.work-with-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--color-white);
+  line-height: 1.41;
+}
+.work-with-title > span {
+  color: var(--color-dark-red);
+}

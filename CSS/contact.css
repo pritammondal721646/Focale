@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --color-body: #1e1e1e;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-dark-red: #8a0707;
+  --card-bg: linear-gradient(to right, #ffffff, #999999);
+  --color-p-light: rgb(255, 255, 255, 50%);
+  --color-light-white: rgb(255, 255, 255, 70%);
+  --border-color: rgb(167, 167, 167, 50%);
+}
+.contact-sec {
+  padding: 100px 0;
+}
+.contact-hdr .title-2 {
+  margin-bottom: 50px;
+}
+.contact-hdr .subtitle {
+  margin-bottom: 15px;
+}
+
+.info-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.text-box {
+  margin-left: 20px;
+}
+.text-box .icon-title {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--color-white);
+  text-transform: capitalize;
+  font-family: "Urbanist", sans-serif;
+}
+.text-box .icon-sub {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--color-light-white);
+  text-transform: capitalize;
+  font-family: "Urbanist", sans-serif;
+  transition: 0.3s ease-in;
+}
+.text-box .icon-sub:hover {
+  color: var(--color-dark-red);
+}
+.info-box .icon{
+    transition: 0.3s linear;
+}
+.info-box .icon:hover{
+    transform: scale(1.2);
+}
+.getin-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--color-p-light);
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.contact-form {
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-row .form-group {
+  width: 48%;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.form-group.full {
+  width: 100%;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+  padding: 25px 0;
+  color: var(--color-white);
+  font-size: 16px;
+  outline: none;
+}
+.form-group.textarea textarea {
+  height: 140px;
+  resize: none;
+}
+
+.form-group label {
+  font-family: "Urbanist", sans-serif;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  color: var(--color-light-white);
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  pointer-events: none;
+  transition: 0.35s ease;
+}
+.form-group input:focus + label,
+.form-group input:valid + label,
+.form-group textarea:focus + label,
+.form-group textarea:valid + label {
+  top: -14px;
+  font-size: 13px;
+  color: var(--color-white);
+}
+
+.form-group::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 1.5px;
+  background: var(--color-white);
+  transition: 0.4s;
+}
+
+.form-group:focus-within::after {
+  width: 100%;
+}
+.contact-btn .primary-btn {
+  margin-top: 50px;
+}
+.contact-map {
+  padding: 100px 0;
+  background: url(/Assets/contact.png) no-repeat center/cover;
+  min-height: 100vh;
+}
+@media screen and (max-width: 576px) {
+  .contact-hdr .subtitle {
+    font-size: 15px;
+  }
+  .getin-title {
+    font-size: 20px;
+  }
+}

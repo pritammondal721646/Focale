@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* font-family: "Urbanist", sans-serif; */
+:root {
+  --color-body: #1e1e1e;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-dark-red: #8a0707;
+  --card-bg: linear-gradient(to right, #ffffff, #999999);
+  --color-p-light: rgb(255, 255, 255, 50%);
+  --color-light-white: rgb(255, 255, 255, 70%);
+  --gradient-card: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.06),
+    rgba(255, 255, 255, 0.01)
+  );
+  --number-color: linear-gradient(135deg, #a7a7a7, #8a0707);
+  --border-color:rgba(255, 255, 255, 0.15);
+  --color-shadow:#rgba(255, 255, 255, 0.08);
+}
+.services-sec {
+  padding: 100px 0;
+}
+.services-hdr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.services-hdr .right > p {
+  max-width: 983px;
+  font-size: 18px;
+  line-height: 1.55;
+  font-weight: 500;
+  color: var(--color-p-light);
+  text-transform: capitalize;
+  font-family: "Urbanist", sans-serif;
+}
+.service-card {
+  max-width: 526.67px;
+  position: relative;
+  padding: 68px 45px;
+  border-radius: 20px;
+  background: var(--gradient-card);
+  border: 1px solid var(--border-color);
+  backdrop-filter: blur(8px);
+  height: 100%;
+  /* overflow: hidden; */
+  transition: 0.4s;
+ 
+}
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px var(--color-shadow);
+}
+.icon {
+  margin-bottom: 20px;
+}
+
+.service-card .title-3 {
+  color: var(--color-white);
+  margin-bottom: 20px;
+}
+.service-card > p {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Urbanist", sans-serif;
+  color: var(--color-p-light);
+  line-height: 1.4;
+}
+.service-number {
+  position: absolute;
+  right: 25px;
+  bottom: -23px;
+  font-size: 100px;
+  font-weight: 600;
+  background: var(--number-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+
+  opacity: 0.45;
+  pointer-events: none;
+}
+@media screen and (max-width:768px) {
+  .service-card{
+    margin: 0 auto;
+  }
+  .service-card .title-3{
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .services-hdr .right>p{
+    display: none;
+  }
+ 
+  
+}

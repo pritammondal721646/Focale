@@ -1,0 +1,53 @@
+:root {
+  --color-body: #1e1e1e;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-dark-red: #8a0707;
+  --card-bg: linear-gradient(to right, #ffffff, #999999);
+  --color-p-light: rgb(255, 255, 255, 50%);
+  --color-light-white: rgb(255, 255, 255, 70%);
+}
+.videoportfolio-sec {
+  padding: 100px 0;
+}
+.videoportfolio-hdr {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.video-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.video-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+.video-card:hover img {
+  transform: scale(1.08);
+}
+
+.play-btn {
+  position: absolute;
+  bottom: 18px;
+  left: 18px;
+  transition: 0.3s ease;
+}
+.play-btn:hover {
+  transform: translateY(-6px) scale(1.08);
+  box-shadow:
+    0 8px 18px rgba(0, 0, 0, 0.25),
+    0 0 0 6px rgba(138, 7, 7, 0.15),
+    0 0 25px rgba(138, 7, 7, 0.45);
+}
+@media screen and (max-width: 576px) {
+  .play-btn {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+  
+}

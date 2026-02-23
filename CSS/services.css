@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* font-family: "Urbanist", sans-serif; */
+:root {
+  --color-body: #1e1e1e;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-dark-red: #8a0707;
+  --card-bg: linear-gradient(to right, #ffffff, #999999);
+  --color-p-light: rgb(255, 255, 255, 50%);
+  --color-light-white: rgb(255, 255, 255, 70%);
+  --gradient-card: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.06),
+    rgba(255, 255, 255, 0.01)
+  );
+  --number-color: linear-gradient(135deg, #a7a7a7, #8a0707);
+  --border-color: rgba(255, 255, 255, 0.15);
+  --color-shadow: #rgba(255, 255, 255, 0.08);
+}
+.services-sec {
+  padding: 100px 0;
+}
+.services-hdr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.services-hdr .left .title-2 {
+  margin-top: 15px;
+}
+.services-hdr .right > p {
+  max-width: 983px;
+  font-size: 18px;
+  line-height: 1.55;
+  font-weight: 500;
+  color: rgb(255, 255, 255, 80%);
+  text-transform: capitalize;
+  font-family: "Urbanist", sans-serif;
+}
+.card {
+  max-width: 382.5px;
+  /* height: 510px; */
+  padding: 60px 45px;
+  border-radius: 20px;
+
+  background: var(--card-bg);
+}
+.card .title-3 {
+  margin-top: 20px;
+}
+.card > p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-top: 20px;
+}
+.number {
+  margin-left: auto;
+  font-size: 150px;
+  font-weight: 600;
+  /* margin-top: 50px; */
+}

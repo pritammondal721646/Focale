@@ -1,0 +1,85 @@
+.perfect-row {
+  align-items: center;
+}
+.perfect-shot-sec {
+  padding: 100px 0;
+  background: url(/Assets/perfectshots.png) no-repeat center/cover;
+}
+.perfect-shot-sec .primary-btn{
+  margin-top: 20px;
+}
+.perfect-heading .title-2 {
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.perfect-card {
+  max-width: 775px;
+  padding: 65px;
+  background: var(--color-body);
+  border-radius: 20px;
+}
+.perfect-card .title-4 {
+  margin-bottom: 20px;
+}
+.perfect-card > p {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--color-p-light);
+  font-family: "Urbanist", sans-serif;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.client {
+  display: flex;
+  align-items: center;
+}
+.client-img {
+  max-width: 100px;
+}
+.client-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.client-info {
+  margin-left: 20px;
+}
+.client-info .title-5 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: 10px;
+  font-family: "Urbanist", sans-serif;
+  text-transform: capitalize;
+}
+.client-info > span {
+  font-family: "Urbanist", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--color-light-white);
+  text-transform: capitalize;
+}
+.quote {
+  margin-left: auto;
+}
+@media screen and (max-width: 768px) {
+  .perfect-shot-sec .primary-btn{
+    margin-bottom: 30px;
+  }
+  .perfect-card .title-4 {
+    font-size: 15px;
+  }
+  .perfect-card > p {
+    font-size: 12px;
+  }
+  .perfect-card {
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .client-img,
+  .client-info,
+  .quote {
+    display: none;
+  }
+}
