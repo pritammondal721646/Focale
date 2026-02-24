@@ -3,9 +3,9 @@
 }
 .perfect-shot-sec {
   padding: 100px 0;
-  background: url(../Assets/perfectshots.png) no-repeat center/cover;
+  background: url("../Assets/perfectshots.png") no-repeat center/cover;
 }
-.perfect-shot-sec .primary-btn{
+.perfect-shot-sec .primary-btn {
   margin-top: 20px;
 }
 .perfect-heading .title-2 {
@@ -63,7 +63,7 @@
   margin-left: auto;
 }
 @media screen and (max-width: 768px) {
-  .perfect-shot-sec .primary-btn{
+  .perfect-shot-sec .primary-btn {
     margin-bottom: 30px;
   }
   .perfect-card .title-4 {
