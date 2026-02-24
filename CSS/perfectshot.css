@@ -3,7 +3,7 @@
 }
 .perfect-shot-sec {
   padding: 100px 0;
-  background: url(Assets/perfectshots.png) no-repeat center/cover;
+  background: url(../Assets/perfectshots.png) no-repeat center/cover;
 }
 .perfect-shot-sec .primary-btn{
   margin-top: 20px;
