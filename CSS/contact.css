@@ -136,7 +136,7 @@
 }
 .contact-map {
   padding: 100px 0;
-  background: url("Assets/contact.png") no-repeat center/cover;
+  background: url("../Assets/contact.png") no-repeat center/cover;
   min-height: 100vh;
 }
 @media screen and (max-width: 576px) {
