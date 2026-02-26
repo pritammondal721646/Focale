@@ -7,28 +7,42 @@
   --color-p-light: rgb(255, 255, 255, 50%);
   --color-light-white: rgb(255, 255, 255, 70%);
 }
+
 .work-with-sec {
   padding: 100px 0;
-  background: url("../Assets/workwith.png");
-  height: 400px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
+  background: var(--color-black);
 }
-.work-with-hdr {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* true center */
-  text-align: center;
-}
-.work-with-title {
+.brands-title {
   font-size: 24px;
   font-weight: 800;
+  letter-spacing: 2px;
   color: var(--color-white);
-  line-height: 1.41;
 }
-.work-with-title > span {
+.brands-title span {
   color: var(--color-dark-red);
+}
+.logo-box {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(167, 167, 167, 60%);
+  transition: all 0.3s ease;
+}
+.logo-box svg {
+  width: 101px;
+  height: 19px;
+  /* fill: #777; */
+  transition: all 0.3s ease;
+}
+
+.logo-box:hover svg {
+  transform: scale(1.1);
+}
+@media screen and (max-width:768px) {
+  .brands-title{
+    font-size: 15px;
+    margin: 20px 0;
+  }
+  
 }
