@@ -2,7 +2,7 @@ const counters = document.querySelectorAll(".counter-number");
 
 function animateCounter(counter) {
   const target = +counter.dataset.target;
-  const duration = 2200; // total animation time
+  const duration = 2200; 
   const startTime = performance.now();
 
   function easeOutCubic(t) {
@@ -37,7 +37,7 @@ function formatNumber(value, target) {
   return value;
 }
 
-// Trigger when visible
+
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {

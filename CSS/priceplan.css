@@ -118,18 +118,14 @@
   -webkit-text-fill-color: transparent;
   color: transparent;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .addon-card {
     margin: 0 auto;
     margin-bottom: 30px;
   }
-  .watermark{
+  .watermark {
     font-size: 30px;
     font-weight: 500;
     bottom: 0;
   }
-}
-@media screen and (max-width:576px){
-  
-  
 }
