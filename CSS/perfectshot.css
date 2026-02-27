@@ -21,7 +21,7 @@
 .perfect-card .title-4 {
   margin-bottom: 20px;
 }
-.perfect-card > p {
+.perfect-card .slide > p {
   font-size: 20px;
   font-weight: 400;
   color: var(--color-p-light);
@@ -61,6 +61,30 @@
 }
 .quote {
   margin-left: auto;
+}
+.content-slider {
+  position: relative;
+  overflow: hidden;
+  min-height: 140px;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.7s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+  transform: translateX(0);
+  position: relative;
+}
+
+.slide.exit {
+  transform: translateX(-100%);
+  opacity: 0;
 }
 @media screen and (max-width: 768px) {
   .perfect-shot-sec .primary-btn {

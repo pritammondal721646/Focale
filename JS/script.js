@@ -50,3 +50,18 @@ const observer = new IntersectionObserver(
 );
 
 counters.forEach((counter) => observer.observe(counter));
+
+const slides = document.querySelectorAll(".slide");
+let currentIndex = 0;
+
+function nextSlide() {
+  slides[currentIndex].classList.remove("active");
+  slides[currentIndex].classList.add("exit");
+
+  currentIndex = (currentIndex + 1) % slides.length;
+
+  slides[currentIndex].classList.remove("exit");
+  slides[currentIndex].classList.add("active");
+}
+
+setInterval(nextSlide, 4000);
