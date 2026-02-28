@@ -1,3 +1,16 @@
+const toggler = document.querySelector(".custom-toggler");
+const offcanvasEl = document.getElementById("navbarSupportedContent");
+
+const offcanvas = new bootstrap.Offcanvas(offcanvasEl);
+
+toggler.addEventListener("click", function () {
+  this.classList.toggle("animate");
+});
+
+offcanvasEl.addEventListener("hidden.bs.offcanvas", function () {
+  toggler.classList.remove("animate");
+});
+
 const counters = document.querySelectorAll(".counter-number");
 
 function animateCounter(counter) {
@@ -65,3 +78,4 @@ function nextSlide() {
 }
 
 setInterval(nextSlide, 4000);
+

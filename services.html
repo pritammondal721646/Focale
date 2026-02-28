@@ -18,7 +18,7 @@
   </head>
   <body>
     <!--Header star-->
-    <header>
+   <header>
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <div class="nav-logo">
@@ -26,13 +26,26 @@
               <img src="Assets/brandlogo.png" alt="brandlogo" />
             </a>
           </div>
-          <button class="menu">
+          <button
+            class="navbar-toggler custom-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div
+            class="offcanvas offcanvas-end align-items-center"
+            id="navbarSupportedContent"
+          >
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >HOME</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="aboutus.html">ABOUT</a>
@@ -703,5 +716,8 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script src="JS/script.js">
+
+    </script>
   </body>
 </html>

@@ -39,6 +39,9 @@ ul {
 .container {
   max-width: 1674px !important;
 }
+.max-container {
+  max-width: 1920px;
+}
 .title-1 {
   font-size: 4.167vw;
   font-weight: 800;
@@ -107,6 +110,69 @@ header {
   background: var(--color-black);
   padding: 15px 0;
 }
+.custom-toggler {
+  position: relative;
+  z-index: 1060;
+}
+.custom-toggler {
+  position: relative;
+  width: 30px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.custom-toggler span {
+  display: inline-block;
+  height: 3px;
+  width: 30px;
+  background: var(--color-dark-red);
+  transition: 0.5s linear;
+}
+
+/* Top & bottom lines */
+.custom-toggler::before,
+.custom-toggler::after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 30px;
+  background: var(--color-dark-red);
+  transition: 0.5s linear;
+}
+
+.custom-toggler::before {
+  top: 0;
+}
+
+.custom-toggler::after {
+  bottom: 0;
+}
+
+.custom-toggler.animate span {
+  transform: translateX(-50px);
+  opacity: 0;
+}
+
+.custom-toggler.animate::before {
+  transform: rotate(-45deg);
+  top: 8px;
+}
+
+.custom-toggler.animate::after {
+  transform: rotate(45deg);
+  top: 8px;
+}
+.navbar-toggler {
+  border: none !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+.offcanvas{
+  background: var(--color-body) !important;
+}
 .nav-item {
   margin-left: 30px;
 }
@@ -140,7 +206,6 @@ header {
   height: 100%;
   object-fit: cover;
 }
-
 
 /* ========== */
 /* Footer css */
@@ -211,5 +276,22 @@ header {
   height: 1px;
   background: linear-gradient(to right, #222, #444, #222);
 }
+@media screen and (max-width: 992px) {
+  .offcanvas {
+    flex-direction: column;
+   
+  }
+  .navbar-nav {
+    margin: 0 auto !important;
+    text-align: center;
 
-
+    padding: 80px 0 0;
+  }
+  .nav-item {
+    margin: 0;
+  }
+  .nav-link {
+    color: var(--color-dark-red) !important;
+    margin-bottom: 20px;
+  }
+}
