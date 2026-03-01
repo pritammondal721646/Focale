@@ -122,13 +122,13 @@ header {
   align-items: center;
   justify-content: center;
 }
-.custom-toggler span {
+/* .custom-toggler span {
   display: inline-block;
   height: 3px;
   width: 30px;
   background: var(--color-dark-red);
   transition: 0.5s linear;
-}
+} */
 
 /* Top & bottom lines */
 .custom-toggler::before,
