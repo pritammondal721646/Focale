@@ -19,6 +19,9 @@
 }
 .banner-content {
   padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .banner-content .title-1 {
   color: var(--color-white);
@@ -37,11 +40,9 @@
 }
 .orbit-section {
   position: relative;
-  width: 700px;
-  height: 700px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: min(700px, 90vw);
+  height: min(700px, 90vw);
+  margin-top: 40px;
 }
 .orbit {
   position: absolute;
@@ -91,12 +92,57 @@
 .orbit-item:nth-child(6) {
   transform: rotate(300deg) translate(300px);
 }
-
+.orbit-section .primary-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
 @keyframes rotateOrbit {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@media (max-width: 768px) {
+  .orbit-item {
+    width: 22vw;
+    height: 14vw;
+    margin: calc(-7vw) 0 0 calc(-11vw);
+  }
+
+  .orbit-item:nth-child(1) {
+    transform: rotate(0deg) translate(35vw);
+  }
+  .orbit-item:nth-child(2) {
+    transform: rotate(60deg) translate(35vw);
+  }
+  .orbit-item:nth-child(3) {
+    transform: rotate(120deg) translate(35vw);
+  }
+  .orbit-item:nth-child(4) {
+    transform: rotate(180deg) translate(35vw);
+  }
+  .orbit-item:nth-child(5) {
+    transform: rotate(240deg) translate(35vw);
+  }
+  .orbit-item:nth-child(6) {
+    transform: rotate(300deg) translate(35vw);
+  }
+
+  .orbit-section .primary-btn {
+    font-size: 3.2vw;
+    padding: 2vw 4vw;
+    margin-left: 0;
+  }
+
+  .orbit-section .primary-btn::before {
+    width: 18vw;
+    height: 18vw;
+    top: -6vw;
+    left: -12vw;
   }
 }
