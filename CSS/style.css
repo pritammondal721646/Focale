@@ -123,7 +123,6 @@ header {
   justify-content: center;
 }
 
-
 /* Top & bottom lines */
 .custom-toggler::before,
 .custom-toggler::after {
@@ -164,7 +163,7 @@ header {
 .navbar-toggler:focus {
   box-shadow: none !important;
 }
-.offcanvas{
+.offcanvas {
   background: var(--color-body) !important;
 }
 .nav-item {
@@ -200,7 +199,7 @@ header {
   height: 100%;
   object-fit: cover;
 }
-.loading-wrpr{
+.loading-wrpr {
   position: fixed;
   top: 0;
   left: 0;
@@ -213,13 +212,13 @@ header {
   z-index: 22;
   animation: fadeout cubic-bezier(0, 0.65, 1, 0.29) forwards 1s 4s 1;
 }
-@keyframes fadeout{
-  to{
+@keyframes fadeout {
+  to {
     opacity: 0;
     display: none;
   }
 }
-/* From Uiverse.io by milley69 */ 
+/* From Uiverse.io by milley69 */
 .loading svg polyline {
   fill: none;
   stroke-width: 3;
@@ -249,7 +248,6 @@ header {
     stroke-dashoffset: 0;
   }
 }
-
 
 /* ========== */
 /* Footer css */
@@ -323,7 +321,6 @@ header {
 @media screen and (max-width: 992px) {
   .offcanvas {
     flex-direction: column;
-   
   }
   .navbar-nav {
     margin: 0 auto !important;
@@ -338,4 +335,10 @@ header {
     color: var(--color-dark-red) !important;
     margin-bottom: 20px;
   }
+}
+@media screen and (max-width: 576px) {
+  .nav-logo {
+    max-width: 200px;
+  }
+  
 }
